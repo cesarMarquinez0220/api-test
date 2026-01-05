@@ -1,0 +1,78 @@
+# --- TUS REGLAS ORIGINALES (MAVEN) ---
+HELP.md
+target/
+# Nota: Lo estandar es NO ignorar el wrapper.jar para que otros puedan compilar
+# pero si prefieres ignorarlo, deja esta linea:
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- AGREGADO: SISTEMA OPERATIVO (Muy Importante) ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- AGREGADO: LOGS Y ARCHIVOS DE EJECUCIÓN ---
+*.log
+logs/
+*.pid
+# Archivo de log especifico de Spring Boot
+spring.log
+
+# --- AGREGADO: ARCHIVOS COMPILADOS Y PAQUETES ---
+# (Por si alguno se escapa de la carpeta target)
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# --- AGREGADO: SEGURIDAD Y CONFIGURACIÓN LOCAL ---
+# Ignorar configuraciones que puedan tener contraseñas reales
+# Ajusta el nombre segun uses (ej: application-dev.properties)
+secrets.yml
+application-local.properties
+.env
+
+# --- AGREGADO: OTROS ---
+# Archivos de backup de editores
+*~
+*.swp
+# Archivo generado por el plugin maven-shade (si lo usas en el futuro)
+dependency-reduced-pom.xml
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+# Historial local de VS Code
+.history/
